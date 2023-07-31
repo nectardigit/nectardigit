@@ -1,0 +1,591 @@
+@media (min-width: 1367px) {
+    .container {
+        width: 100%;
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-expand-lg>.container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navbar-wrap {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-search {
+        position: absolute;
+        right: 0;
+    }
+    .logo img {
+        width: 60%;
+    }
+    .video-btns {
+        display: none;
+    }
+    .details-sidebar {
+        margin-top: 30px;
+    }
+    .related-news .thumb-news {
+        margin-bottom: 30px;
+    }
+    .related-news.pb {
+        padding-bottom: 10px;
+    }
+    .news-style3-img {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .news-style3-title {
+        padding: 20px;
+    }
+    .thumb-news-style2+.thumb-news-style2 {
+        margin-top: 0;
+    }
+    .thumb-news-style2 {
+        margin-top: 30px;
+    }
+    .bichar-wrap {
+        margin-bottom: 30px;
+        height: auto !important;
+    }
+    .bichar.mb {
+        margin-bottom: 10px;
+    }
+    .factory-sec .thumbnail-section {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    .factory-sec .thumb-news {
+        margin-bottom: 30px;
+    }
+    .factory-sec.mb {
+        margin-bottom: 10px;
+    }
+    .auto .left-img img {
+        height: 288px;
+    }
+    #auto .bank-content {
+        margin-bottom: 30px;
+    }
+    .video-thumbnails {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .article-content {
+        margin-top: 30px;
+    }
+    .aside-news .eco-content {
+        margin-top: 30px;
+    }
+    .space-news .eco-content {
+        margin-bottom: 30px;
+    }
+    .space-news2.mt {
+        margin-top: 0;
+    }
+    .space-news .eco-row {
+        margin-bottom: 0;
+    }
+    .pradesh-sec .thumbnail-section-wrap {
+        margin-bottom: 30px;
+    }
+    .pradesh-sec .nav-item {
+        white-space: nowrap;
+    }
+    .pradesh-sec .nav-tabs {
+        padding-bottom: 10px;
+        flex-wrap: inherit;
+        overflow-x: scroll;
+        max-width: 620px;
+        width: 100%;
+        margin: auto;
+    }
+    .hide-mob {
+        display: none;
+    }
+    .logo.mob {
+        display: block;
+        text-align: center;
+    }
+    .sticky-date {
+        display: none;
+    }
+    .logo.mob img {
+        width: 145px;
+    }
+    .logo.mob .time-class p {
+        font-size: 12px;
+    }
+    .sticky-list {
+        display: none !important;
+    }
+    .newsletter-left {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .newsletter-wrap {
+        display: block;
+    }
+    .news-letter-media {
+        justify-content: center;
+    }
+    .trending-head a {
+        padding: 35px 5px !important;
+    }
+    .trending-news-section-img a {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .sticky-logo {
+        display: none !important;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .logo img {
+        width: 100%;
+        max-width: 200px;
+    }
+    .top-left {
+        text-align: center;
+    }
+    .time-class {
+        text-align: center;
+    }
+    .search-up {
+        box-shadow: none;
+    }
+    .search-up .form-group {
+        margin: 3px 0;
+    }
+    .themeBtn {
+        width: 100%;
+        margin-top: 3px;
+    }
+    .footer-wrap h2:before {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .footer-wrap h2:after {
+        left: -30px;
+        right: 0;
+        margin: auto;
+    }
+    .footer-wrap {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #ffffff14;
+    }
+    .footer-wrap ul li+li {
+        margin-top: 10px;
+    }
+    #footer {
+        padding: 30px 0;
+        text-align: center;
+    }
+    .video-popup-wrap {
+        display: none;
+    }
+    .details-title h1 {
+        font-size: 35px;
+    }
+    .details-content-section .common-ads {
+        margin-top: 20px;
+    }
+    .details-content-section .comon-ads.mt {
+        margin-top: 0;
+    }
+    .go-top {
+        display: none;
+    }
+    .post-section {
+        margin-bottom: 20px;
+    }
+    .top-img img {
+        height: 100%;
+        object-fit: inherit;
+    }
+    .text-head h2 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .highlight-content {
+        margin-top: 20px;
+    }
+    .mukhya-samachar .thumbnail-section-wrap {
+        margin-bottom: 30px;
+    }
+    .news-style3-img {
+        margin-bottom: 0;
+    }
+    .news-style3-title p {
+        text-align: center;
+    }
+    .eco-content {
+        padding: 20px;
+    }
+    .eco-content h2 a {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .auto .common-ads {
+        margin-bottom: 30px;
+    }
+    .thumbnail-section-wrap {
+        margin-bottom: 30px;
+    }
+    #mukhya-samachar .bank-sec-wrap {
+        margin-bottom: 0;
+    }
+    .factory-sec .thumbnail-section-wrap {
+        margin-bottom: 0px;
+    }
+    .purbadhar-sec .bank-sec-wrap {
+        margin-bottom: 30px;
+    }
+    #auto .thumb-news+.thumb-news {
+        margin-bottom: 30px;
+    }
+    .video-thumbnails h3 a {
+        padding: 20px;
+    }
+    .video-thumb img {
+        height: 100px;
+    }
+    .article-content h3 a {
+        font-size: 30px;
+    }
+    .paginations nav {
+        overflow-x: scroll;
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+    }
+    .paginations ul {
+        justify-content: inherit;
+    }
+    .facebook-page {
+        margin-bottom: 30px;
+    }
+    .skip-ads.only-desk {
+        display: none;
+    }
+    .skip-ads.only-mob {
+        display: block;
+    }
+    .pf-details-wrap h1 {
+        font-size: 40px;
+    }
+    .trending-menu {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .ads-only-mobile {
+        display: block;
+    }
+    .ads-only-desktop {
+        display: none;
+    }
+    .logo img {
+        max-width: 150px;
+    }
+    .top-nav {
+        padding: 10px 0;
+    }
+    .footer-wrap h2 {
+        font-size: 20px;
+    }
+    .newsletter-wrap {
+        display: block;
+        justify-content: center;
+        max-width: 100%;
+        text-align: center;
+    }
+    .newsletter-form {
+        width: 100%;
+    }
+    .newsletter-title {
+        width: 100%;
+    }
+    .newsletter-title h3 {
+        margin-bottom: 20px;
+    }
+    .newsletter-form .form-control {
+        padding-right: 15px;
+    }
+    .newsletter-form .btn {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 40px;
+    }
+    .footer-bototm ul {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-bototm ul li+li {
+        margin-top: 3px;
+    }
+    .global-title {
+        padding-bottom: 7px;
+    }
+    .global-title h3 {
+        font-size: 20px;
+    }
+    .global-title h3:before {
+        bottom: -13px;
+    }
+    .trending-section h3 {
+        font-size: 20px;
+    }
+    .details-title h1 {
+        font-size: 25px;
+    }
+    .details-content-section {
+        padding: 20px;
+    }
+    .trending-section {
+        padding: 20px;
+    }
+    .trending-number {
+        margin-right: 15px;
+    }
+    .trending-number span {
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    .trending-section h3 {
+        margin-top: -20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .author-sec-wrap {
+        display: block;
+        justify-content: center;
+    }
+    .author-sec-img {
+        margin-bottom: 15px;
+    }
+    .details-share {
+        display: block;
+        justify-content: center;
+    }
+    .details-share-left {
+        margin-bottom: 15px;
+    }
+    .details-share-left ul li+li {
+        margin-left: 10px;
+    }
+    .banner-content-section {
+        padding: 20px;
+    }
+    .text-head {
+        padding: 20px;
+    }
+    .highlight-content h3 a {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .news-style3-title p {
+        font-size: 15px;
+    }
+    .news-style3-title h3 {
+        line-height: 30px;
+        font-size: 22px;
+    }
+    .eco-content h2 a {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .eco-content p {
+        font-size: 15px;
+    }
+    .thumb-news-style2 h2 a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .antarbarta.mb {
+        margin-bottom: 30px;
+    }
+    .antarbarta .eco-image.antarbarta-main img {
+        height: 300px;
+    }
+    .antarbarta .eco-image img {
+        height: 200px;
+    }
+    .bichar-wrap {
+        padding: 30px 20px;
+    }
+    .bichar-content h3 a {
+        font-size: 18px;
+    }
+    .my-small-main-img h3 a {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .factory-sec .left-img h2 a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .paryatan .news-text h2 a {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .auto .common-ads {
+        margin-bottom: 0;
+    }
+    #corporate.pb {
+        padding-bottom: 10px;
+    }
+    .aside-feature-img img {
+        height: 300px;
+    }
+    .aside-feature-img h3 a {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .aside-title-wrap {
+        padding: 20px 20px;
+    }
+    .photo-feature.pb {
+        padding-bottom: 15px;
+    }
+    .article-img img {
+        height: 300px;
+    }
+    .article-content h3 a {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .article-content p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .skip-ads-btn {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+    .thumb-list-bottom .video-thumb img {
+        height: 185px;
+    }
+    .newsletter-left {
+        display: block;
+    }
+    .news-letter-media {
+        display: block;
+    }
+    .news-letter-media span {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+        display: block;
+    }
+    .social-newsletter {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #mukhya-samachar .bank-sec-wrap {
+        margin-bottom: 20px;
+    }
+    .logo.mob img {
+        width: 120px;
+    }
+    .search a {
+        padding: 20px 10px;
+    }
+    .trending-head a {
+        padding: 30px 3px !important;
+    }
+    .trending-menu {
+        padding: 20px;
+    }
+    .trending-news-section-img a {
+        padding: 0 !important;
+    }
+    .skip-ads-img {
+        padding: 0;
+    }
+    .skip-ads-btn {
+        top: 35px;
+    }
+    .pf-details-banner img {
+        height: auto;
+    }
+    .pf-details-wrap {
+        padding: 20px;
+    }
+    .top-news .top-img {
+        padding-top: 0;
+    }
+    .news-style3-img img {
+        height: auto;
+    }
+    .news-style3-row .thumbnail-section-wrap {
+        margin-top: 0px;
+    }
+    .news-style3-content {
+        margin-bottom: 30px;
+    }
+    .bank-sec-wrap+.bank-sec-wrap {
+        margin-top: 30px;
+    }
+    .bank-sec-wrap {
+        margin-bottom: 0;
+    }
+    .eco-image img {
+        height: auto;
+    }
+    .left-img img {
+        height: auto;
+    }
+    .auto .left-img img {
+        height: auto;
+    }
+    .news-text p {
+        margin-bottom: 0;
+    }
+    .antarbarta {
+        overflow: hidden;
+    }
+    .latest-head {
+        display: none;
+    }
+    .news-style3-content img {
+        height: auto;
+    }
+    #capital-bishes .bank-sec-wrap {
+        margin-top: 30px;
+    }
+    .bishes-main-section {
+        margin-bottom: 0px !important;
+    }
+    #capital-bishes .news-style3-content {
+        margin-bottom: 0;
+    }
+    #suchana .thumb-news {
+        margin-bottom: 30px;
+    }
+    #mukhya-samachar .bank-img img {
+        height: auto;
+    }
+}

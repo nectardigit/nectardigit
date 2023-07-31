@@ -1,0 +1,179 @@
+@extends('layouts.front')
+@section('page_title', 'Home')
+    @push('styles')
+    @endpush
+@section('meta')
+    @include('website.shared.meta')
+@endsection
+@section('content')
+    <section class="reporter mt mb">
+        <div class="container">
+            <div class="category-list">
+                @isset($guest_detail)
+                    <article class="reporter-article">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="reporter-img">
+
+                                    <img src="{{ create_image_url($guest_detail->image, 'thumbnail') }}" alt="images">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="reporter-content">
+                                    @isset($guest_detail)
+                                        <h3>{{ @get_reporter($guest_detail) }}</h3>
+                                        <ul>
+                                            @isset($guest_detail->facebook)
+                                                <li class="facebook"><a href="{{ $guest_detail->facebook }}"><i
+                                                            class="fab fa-facebook-f"></i></a></li>
+                                            @endisset
+                                            @isset($guest_detail->twitter)
+                                                <li class="twitter"><a href="{{ $guest_detail->twitter }}"><i
+                                                            class="fab fa-twitter"></i></a></li>
+                                            @endisset
+                                            {{-- <li class="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li class="linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li> --}}
+                                        </ul>
+                                    </div>
+                                @endisset
+                            </div>
+                        </div>
+                    </article>
+                @endisset
+                <div class="aside-news mt">
+                    <div class="row">
+                        @if (isset($section1) && $section1->count())
+                            @foreach ($section1 as $key => $category_news_data)
+                                {{-- @if ($loop->iteration > 1 && $loop->iteration <= 4) --}}
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bank-sec-wrap">
+                                        <div class="bank-img">
+                                            <a href="{{ route('newsDetail', $category_news_data->slug) }}">
+                                            <img src="{{ create_image_url($category_news_data->img_url, 'thumbnail') }}"
+                                                class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="bank-content">
+                                            <h2><a
+                                                    href="{{ route('newsDetail', $category_news_data->slug) }}">{!! @get_title($category_news_data) !!}</a>
+                                            </h2>
+                                            <span class="thumb-time"><i class="far fa-clock"></i>
+                                                {{ published_date($category_news_data->created_at) }}</span>
+                                            <p>
+                                                {!! parse_description($category_news_data, false, 200) !!}
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- @endif --}}
+                            @endforeach
+                        @endif
+                    </div>
+                </div>
+                <div class="aside-news space-news">
+                    <div class="eco-row">
+                        <div class="row">
+                            @if (isset($section2) && $section2->count())
+                                @foreach ($section2 as $key => $category_news_data)
+                                    {{-- @if ($loop->iteration > 4 && $loop->iteration <= 6) --}}
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 space">
+                                                <div class="eco-image">
+                                                    <a href="{{ route('newsDetail', $category_news_data->slug) }}">
+                                                    <img src="{{ create_image_url($category_news_data->img_url, 'thumbnail') }}"
+                                                        class="img-responsive">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 space">
+                                                <div class="eco-content">
+                                                    <h2><a
+                                                            href="{{ route('newsDetail', $category_news_data->slug) }}">{!! @get_title($category_news_data) !!}</a>
+                                                    </h2>
+                                                    <span class="thumb-time"><i class="far fa-clock"></i>
+                                                        {{ published_date($category_news_data->created_at) }}</span>
+                                                    <p>
+                                                        {!! parse_description($category_news_data, false, 200) !!}
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- @endif --}}
+                                @endforeach
+                            @endif
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-news space-news2 mt">
+                    <div class="row">
+                        @if (isset($section3) && $section3->count())
+                            @foreach ($section3 as $key => $category_news_data)
+                                {{-- @if ($loop->iteration > 6 && $loop->iteration <= 9) --}}
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bank-sec-wrap">
+                                        <div class="bank-img">
+                                            <a href="{{ route('newsDetail', $category_news_data->slug) }}"
+                                                ><img src="{{ create_image_url($category_news_data->img_url, 'thumbnail') }}"
+                                                class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="bank-content">
+                                            <h2><a
+                                                    href="{{ route('newsDetail', $category_news_data->slug) }}">{!! @get_title($category_news_data) !!}</a>
+                                            </h2>
+                                            <span class="thumb-time"><i class="far fa-clock"></i>
+                                                {{ published_date($category_news_data->created_at) }}</span>
+                                            <p>
+                                                {!! parse_description($category_news_data, false, 200) !!}
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- @endif --}}
+                            @endforeach
+                        @endif
+                    </div>
+                </div>
+                <div class="aside-news">
+                    <div class="row">
+                        @if (isset($section4) && $section4->count())
+                            @foreach ($section4 as $key => $category_news_data)
+                                {{-- @if ($loop->iteration > 9 && $loop->iteration <= 15) --}}
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="thumb-news">
+                                        <div class="left-img">
+                                            <a href="{{ route('newsDetail', $category_news_data->slug) }}"><img
+                                                    src="{{ create_image_url($category_news_data->img_url, 'thumbnail') }}"></a>
+                                           
+                                        </div>
+                                        <div class="news-text">
+                                            <h2>
+                                                <a
+                                                    href="{{ route('newsDetail', $category_news_data->slug) }}">{!! @get_title($category_news_data) !!}</a>
+                                            </h2>
+                                            <span class="thumb-time"><i class="far fa-clock"></i>
+                                                {{ published_date($category_news_data->created_at) }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- @endif --}}
+                            @endforeach
+                        @endif
+
+                    </div>
+                </div>
+                <div class="paginations">
+                    {{ $guest_news->links('vendor.pagination.custom') }}
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
+@push('scripts')
+    {{-- scripts here --}}
+@endpush
