@@ -30,7 +30,7 @@ class CareerController extends Controller
             $application =  Application::create($data);
             Mail::to($application->email)
                 ->send(new CareerVerification($application->name, $application->verificationCode));
-            request()->session()->flash('success', 'Verify your Email');
+            request()->session()->flash('success', 'Successfully Applied, Please Verify your Email');
             return redirect()->back();
         } catch (\Throwable $th) {
             request()->session()->flash('error', 'Your request cannot be submitted at the moment . please try again later');

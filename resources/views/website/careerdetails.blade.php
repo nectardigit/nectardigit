@@ -145,9 +145,6 @@
 
 @endsection
 @push('styles')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
-        integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 @endpush
 @push('scripts')
     @if ($errors->any())
@@ -157,21 +154,17 @@
             });
         </script>
     @endif
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="{{ asset('assets/front/js/validator.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 
-    @if (session('success') || session('error'))
-        <script>
-            @if (session('success'))
-                toastr.success("{{ Session::get('success') }}","Success !")
-            @endif
-            @if (session('error'))
-                toastr.error("{{ Session::get('error') }}","Error !")
-            @endif
-        </script>
-    @endif
+    <script src="{{ asset('assets/front/js/validator.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        @if (session()->has('success'))
+            toastr.success("{{ session()->get('success') }}","Success !")
+        @endif
+        @if (session()->has('error'))
+            toastr.error("{{ session()->get('error') }}","Error !")
+        @endif
         $("#careerModelForm").validate({
             rules: {
                 name: 'required',

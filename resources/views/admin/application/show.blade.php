@@ -18,7 +18,7 @@
                             <dt>Name</dt>
                             <dd>{{ $application->name }}</dd>
                             <dt>Applied For:</dt>
-                            <dd><a href="{{ ($application->career) ?  route('career.show', $application->career->slug) : '#' }}">{{ ($application->career) ? $application->career->title : 'Not Defined' }}</a>
+                            <dd><a target="_blank" href="{{ ($application->careers) ?  url("/career/".$application->careers->slug) : '#' }}">{{ ($application->careers) ? $application->careers->title : 'Not Defined' }}</a>
                             </dd>
                             <dt>Email</dt>
                             <dd>{{ $application->email }}</dd>

@@ -330,7 +330,7 @@
             <div class="container">
                 <ul>
                     <li>
-                        Copyright © 2021 Nectar Digit. All Right Reserved.</li>
+                        Copyright © {{\Carbon\Carbon::now()->format('Y')}} Nectar Digit. All Right Reserved.</li>
                     <li>Design & Developed By : <a href="https://www.nectardigit.com/" target="_blank">Nectar Digit</a>
                     </li>
                 </ul>
@@ -350,7 +350,6 @@
 
     <script src="{{ asset('js/front.js') }}"></script>
     @stack('scripts')
-
 </body>
 
 </html>

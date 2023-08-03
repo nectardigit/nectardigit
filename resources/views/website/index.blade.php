@@ -19,8 +19,6 @@
     @include('website.index.faq')
     @include('website.index.video')
     @include('website.index.newsletter')
-
-
 @endsection
 @push('scripts')
 
